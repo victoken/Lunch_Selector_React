@@ -12,10 +12,10 @@ export default function LunchList() {
   };
   useEffect(() => {
     // 讀取數據
-    fetch("/LuchOptionData.json")
-      .then((response) => response.json())
-      .then((data) => setLunches(data))
-      .catch((error) => console.error("資料有問題阿:", error));
+    fetch("/Lunch_Selector_React/LuchOptionData.json")
+    .then((response) => response.json())
+    .then((data) => setLunches(data))
+    .catch((error) => console.error("資料有問題阿:", error)); 
   }, []);
 
   return (
